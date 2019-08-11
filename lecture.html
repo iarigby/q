@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>ინტერნეტ პაკეტის მოგზაურობა ქსელში</title>
+<meta name="author" content="(ia)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@3/css/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@3/css/theme/moon.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js@3/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">ინტერნეტ პაკეტის მოგზაურობა ქსელში</h1><h2 class="author">ia</h2><p class="date">Created: 2019-08-10 Sat 20:08</p>
+</section>
+
+<section>
+<section id="slide-sec-">
+<h2 id="org2acdbce">მოტივაცია</h2>
+<p>
+აქ რაც წამეშალა შეიძლება ნოუთებში იყოს
+</p>
+<ul class="fragment">
+<li>მანამდეც მინდოდა</li>
+<li>საგნის გავლის მერე აღფრთოვანებული ვიყავი</li>
+<li>მრავალფეროვანი, საინტერესო</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-sec-">
+<h2 id="org359ce19">ვტესტავთ მაგარ ფუნქციას</h2>
+<section data-background-iframe="http://hakim.se" data-background-interactive></section>
+</section>
+<section id="slide-sec-">
+<h3 id="org53b397d">aba aq ra xdeba</h3>
+</section>
+</section>
+<section>
+<section id="slide-sec-">
+<h2 id="org6bf65a6">შესავალი</h2>
+<p>
+ჩემი მიზანია, რომ ლექციის ბოლოს გესმოდეთ უკან ანიმაციაზე რა ხდება
+</p>
+</section>
+<section id="slide-sec-">
+<h3 id="orgdc7d838">რატომ უნდა დაუთმოს კომპიუტერული მეცნიერებების სტუდენტმა დრო ქსელების სწავლას?</h3>
+<div class="outline-text-3" id="text-orgdc7d838">
+</div>
+</section>
+<section id="slide-sec-">
+<h4 id="org9b74f7a">მნიშვნელოვანი</h4>
+<p>
+კომპიუტერულ ქსელებში ძალიან კარგად აისახება ის პრაგმატული და მრავლისმომცველი მიდგომა, რაც მთლიან მეცნიერებას ახასიათებს. პროტოკოლები არის ძალიან მკაცრად განსაზღვრული მოთხოვნები და მოლოდინები, მაგრამ მიზნის მისაღწევად გაქვს თავისუფლება ნებისმიერი ხერხი აირჩიო. 
+</p>
+</section>
+<section id="slide-sec-">
+<h4 id="orgeedbce8">საინტერესო</h4>
+</section>
+<section id="slide-sec-">
+<h4 id="orgc83d1c6">სახალისო</h4>
+</section>
+</section>
+<section>
+<section id="slide-sec-">
+<h2 id="org34387ad">საფუძველი</h2>
+<p>
+ნებისმიერი სფეროს მიზანია პრობლემის გადაჭრა და დასაწყისში მინდა გავიაზროთ რა პრობლემები უნდა გადაიჭრას ინტერნეტში
+</p>
+</section>
+<section id="slide-sec-">
+<h3 id="org9e56ade">რა პრობლემებთან გვიწევს გამკლავება</h3>
+<p>
+როდესაც ვგზავნით ინტერნეტ პაკეტს (და მოგვიანებით ავხსნი თუ როგორ იქმნება ეს
+პაკეტი და სხვა დეტალები), ამ პაკეტს ვაგზავნით IP მისამართზე. 
+</p>
+</section>
+<section id="slide-sec-">
+<h3 id="orgf71b993">ფუნდამენტური <span class="underline">_</span></h3>
+</section>
+</section>
+<section>
+<section id="slide-sec-">
+<h2 id="orgb41acc7">ვინ მართავს ინტერნეტს?</h2>
+<p>
+(აქამდე ცალ-ცალკე პრობლემა - მოგვარების გზით წარვადგენ ლეიერებს)
+როგორც დაინახეთ, ინტერნეტში სხვადასხვა კონტექსტის მიხედვით სხვადასხვა
+პრობლემები ითხოვენ სხვადასხვა გადაჭრის გზებს. 
+და არ არსებობს ცენტრალური მფლობელი რომელსაც ეცოდინება ვინ რომელ კაბელს
+იყენებს, ვინ რა პროტოკოლით უკავშირდება &#x2026;. 
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-sec-">
+<h2 id="orgb91b9fc">ისტორია</h2>
+</section>
+</section>
+<section>
+<section id="slide-sec-">
+<h2 id="org790f13b">OSI layer model</h2>
+<p>
+ზრდასთან ერთად გამოიკვეთა, რომ ბევრ ძალიან განსხვავებულ პროტოკოლს მოუწევდა
+თანაარსება
+მიუხედავად იმისა, რომ ძალიან საინტერესო და ექშენით სავსე გზა გამოიარა
+ინტერნეტმა, ნაკლებ დროს დავუთმობ ამ ყველაფერს და ისტორიულ კონტექსტს
+დავამთავრებ 19_? წელს, როცა გამოქვეყნდა &#x2026; ამ სტანდარტმა shaped დღევანდელი
+ინტერნეტი
+</p>
+</section>
+<section id="slide-sec-">
+<h3 id="orgd3073fc">ცენტრალური წერტილი დაკავშირების - IP</h3>
+</section>
+<section id="slide-sec-">
+<h3 id="org684ecc5">_ქვემოდან ზემოთ აყოლა</h3>
+<div class="outline-text-3" id="text-org684ecc5">
+</div>
+</section>
+<section id="slide-sec-">
+<h4 id="org3fe0da7">რიცხვების გაგზავნა</h4>
+<p>
+ის, ვინც რიცხვებს აგზავნის არ ზრუნავს იმაზე, თუ რას ნიშნავს ეს რიცხვი. და ის,
+ვინც ამ მიღებული რიცხვის მნიშვნელობას განსაზღვრავს მეორე ბოლოს, საერთოდ არაა
+დაინტერესებული იმაში, ეს რიცხვი ოპტიკური კაბელით გაიგზავნა
+</p>
+
+</section>
+<section id="slide-sec-">
+<h3 id="org06c5fec">მოქნილი</h3>
+<p>
+სისტემის ნებისმიერი ნაწილი შეგიძლია  ჩაანაცვლო  
+</p>
+</section>
+<section id="slide-sec-">
+<h3 id="org3c76939">როგორც დაინახეთ</h3>
+<p>
+ძალიან მკვეთრად გამოყოფილი
+პროტოკოლის და ინტერფეისის განხილვა. ეს სისტემა მხოლოდ ქსელებში არ
+გამოიყენება, იმდენად ფუნდამენტურია და აუცილებელია 
+</p>
+</section>
+</section>
+<section>
+<section id="slide-sec-">
+<h2 id="org5d0cda6">პროცესის აღწერა თავიდან ბოლომდე</h2>
+<p>
+და ეს ყველაფერი, რის ძალიან ზედაპირულად სათქმელადაც დამჭირდა <span class="underline">_</span> წამი,
+საშუალოდ ხდება წამში <span class="underline">_</span> ჯერ ყოველ ჯერზე, როცა განაახლებთ ფბ ან ინსტაგრამის
+ფიდს, მიიღებთ მეილს, განახორცილებთ ვიდეო ზარს ან უყურებთ youtubeს. ყოველ
+წამს, დედამიწის მოსახლეობა იღებს <span class="underline">_</span> პაკეტს, რაც არის __ მეგაბაიტი. 
+</p>
+</section>
+</section>
+<section>
+<section id="slide-sec-">
+<h2 id="org9584cfa">სიჩქარე</h2>
+<p>
+რეალურად, მეგაბიტი წამში არის ინფორმაციის გადაცემის სიჩქარე&#x2026; პირველი
+კავშირის დროს, რეალურად უფრო სწრაფი იქნებოდა თუ დაურეკავდნენ და ამ იმეილს
+მოუყვებოდნენ. 
+</p>
+</section>
+</section>
+<section>
+<section id="slide-sec-">
+<h2 id="orgb38dd8c">შეჯამება</h2>
+<div class="outline-text-2" id="text-orgb38dd8c">
+</div>
+</section>
+<section id="slide-sec-">
+<h3 id="org8d0e407">რესურსებზე წვდომა</h3>
+</section>
+<section id="slide-sec-">
+<h3 id="org274aa9e">გამოყენებული მასალები</h3>
+<p>
+შევეცადე რომ ვიკიპედიის გარდა ბევრი არაფერი გამომეყენებინა, რომ ყველა ანალოგი
+ჩემი მოფიქრებული ყოფილიყო. 
+</p>
+<ul>
+<li>წყობა</li>
+<li>ვიზუალური მასალა</li>
+<li>ანალოგები</li>
+
+</ul>
+<p>
+არის დამოუკიდებლად მოფიქრებული, ლექციის სლაიდებშიც არ ჩამიხედავს (ჩანიშნული
+ინფორმაცია?)
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-sec-">
+<h2 id="orgb72cc17">სხვა</h2>
+<div class="outline-text-2" id="text-orgb72cc17">
+</div>
+</section>
+<section id="slide-sec-">
+<h3 id="orgf4e1134">რიცხვები</h3>
+<p>
+ორობითი სისტემის მაგივრად გამოვიყენებ ათობით სისტემას - ანუ ციფრებს 
+</p>
+
+<p>
+მაგალითად, უნდა გავარკვიოთ
+</p>
+</section>
+<section id="slide-sec-">
+<h4 id="org2d54a5c">რამდენი ციფრია ერთი რიცხვი</h4>
+
+</section>
+<section id="slide-sec-">
+<h3 id="org405ae03">რატომაა პროტოკოლებად და შრეებად დაყოფა ასეთი მნიშვნელოვანი?</h3>
+<div class="outline-text-3" id="text-org405ae03">
+</div>
+</section>
+<section id="slide-sec-">
+<h4 id="orgdc2ad58">ნებისმიერი ნაწილის შეცვლა მთლიან დანარჩენ სისტემას ხელუხლებელს ტოვებს</h4>
+</section>
+<section id="slide-sec-">
+<h3 id="orgf192e81">__</h3>
+<p>
+ფოსტის და ნავიგაციის მსგავსად,
+</p>
+<ul>
+<li>როცა გვინდა გავიგოთ როგორ მოვხვდეთ _<sub>დან</sub> თავისუფალ უნივერსიტეტამდე, ჯერ
+სწორი ქვეყანა უნდა ვიკითხოთ</li>
+
+</ul>
+</section>
+<section id="slide-sec-">
+<h3 id="orga512e07">კონტექსტი</h3>
+<div class="outline-text-3" id="text-orga512e07">
+</div>
+</section>
+<section id="slide-sec-">
+<h4 id="org8c51274">კომპ. მეცნიერების სხვა დარგებთან</h4>
+<ul>
+<li>კოდინგის - დაშიფვრის თეორია</li>
+<li>დისტრიბუციული სისტემები</li>
+<li>რა ქვია ინტერფეისი და კლიენტის მოწყობას</li>
+
+</ul>
+</section>
+<section id="slide-sec-">
+<h4 id="org15e4218">მეცნიერების სხვა სფეროებთან</h4>
+<ul>
+<li>ქსელები
+<ul>
+<li>ფიზიკა/მათემატიკის დარგია და ძალიან ბევრი საკითხი (<sub>მაგალითები</sub>_)</li>
+
+</ul></li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@3/lib/js/head.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@3/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>
